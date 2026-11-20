@@ -1,25 +1,25 @@
-import React from 'react';
-import './Professor.css';
+import React from "react";
+import "./professor.css";
 
 function Professor() {
   const professors = [
     {
-      name: 'Dr. Alan Turing',
-      subject: 'Artificial Intelligence',
-      department: 'Information Technology',
-      email: 'alan@example.com',
+      name: "Jaffar anwas A",
+      subject: "Artificial Intelligence",
+      department: "Information Technology",
+      age: 35,
     },
     {
-      name: 'Prof. Grace Hopper',
-      subject: 'Web Development',
-      department: 'Information Technology',
-      email: 'grace@example.com',
+      name: "Gowtham j",
+      subject: "Web Development",
+      department: "Information Technology",
+      age: 32,
     },
     {
-      name: 'Dr. Edgar Codd',
-      subject: 'Database Management',
-      department: 'Information Technology',
-      email: 'edgar@example.com',
+      name: "Sivasakthi G",
+      subject: "Database Management",
+      department: "Information Technology",
+      age: 38,
     },
   ];
 
@@ -32,7 +32,7 @@ function Professor() {
             <h3>{prof.name}</h3>
             <p className="subject">{prof.subject}</p>
             <p>{prof.department}</p>
-            <p className="email">{prof.email}</p>
+            <p>Age: {prof.age}</p>
           </div>
         ))}
       </div>
@@ -40,4 +40,4 @@ function Professor() {
   );
 }
 
-export default Professor
+export default Professor;
